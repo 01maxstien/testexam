@@ -106,22 +106,15 @@
       "email": "mail.com",
       "role": "user",
       "id": 28
-    },
-    {
-      "username": "Andi",
-      "password": "asu",
-      "email": "anduefe",
-      "role": "user",
-      "id": 29
     }
   ],
   "products": [
     {
       "id": 1,
       "nama": "Kaos Polos Hitam",
-      "harga": 20000,
+      "harga": "20000",
       "category": "polos",
-      "discount": 15,
+      "discount": "15",
       "deskripsi": "Kaos Terbaik",
       "img": "https://www.jakartanotebook.com/images/products/99/63/19075/2/kaos-polos-katun-pria-o-neck-size-m-81402b-or-t-shirt-black-24.jpg"
     },
@@ -132,7 +125,7 @@
       "category": "sablon",
       "discount": 0,
       "deskripsi": "Kaos Terbaik",
-      "img": "https://store.primagraphia.co.id/wp-content/uploads/2014/08/konsep-kaos.jpg"
+      "img": "https://ecs7.tokopedia.net/img/cache/700/product-1/2016/12/9/298156/298156_f1170a78-5b7a-4654-9643-2d17059a385b.jpg"
     },
     {
       "nama": "Epic Comeback",
@@ -144,337 +137,54 @@
       "id": 3
     },
     {
+      "id": 4,
       "nama": "Something In Coffee",
-      "harga": 18000,
+      "harga": "18000",
       "category": "Kopi",
-      "discount": 0,
+      "discount": "0",
       "deskripsi": "oke bro",
-      "img": "https://doktersehat.com/wp-content/uploads/2018/11/kopi-doktersehat.jpg",
-      "id": 4
+      "img": "https://doktersehat.com/wp-content/uploads/2018/11/kopi-doktersehat.jpg"
+    },
+    {
+      "nama": "Celana Dalam",
+      "harga": "5000",
+      "category": "Sexy",
+      "discount": "25",
+      "deskripsi": "Adem Bro",
+      "img": "https://cdn.shopify.com/s/files/1/0081/1532/2978/products/FM_3066_3_pcs_1080x1080.jpg?v=1550141494",
+      "id": 5
+    },
+    {
+      "nama": "Bola Voli",
+      "harga": "67000",
+      "category": "Bola",
+      "discount": "50",
+      "deskripsi": "Enak buat lemparin orang",
+      "img": "https://ecs7.tokopedia.net/img/cache/700/product-1/2018/7/16/15106067/15106067_443889f7-cab0-441c-b416-73a6c3882213_700_700.jpg",
+      "id": 6
     }
   ],
   "cart": [
     {
-      "productId": 2,
-      "userId": 29,
-      "quantity": 0,
-      "price": 40000,
-      "img": "https://store.primagraphia.co.id/wp-content/uploads/2014/08/konsep-kaos.jpg",
-      "discount": 0,
-      "productName": "The Gelap Kesatria",
-      "id": 7
-    },
-    {
-      "productId": 3,
-      "userId": 29,
-      "quantity": 0,
-      "price": 30000,
-      "img": "https://ecs7.tokopedia.net/img/product-1/2018/7/27/27345219/27345219_c9909d3f-8e63-4581-a242-63995611577d_1000_1000.jpg",
-      "discount": 20,
-      "productName": "Epic Comeback",
-      "id": 8
-    },
-    {
       "productId": 1,
-      "userId": 29,
-      "quantity": 0,
+      "userId": 3,
+      "quantity": 3,
       "price": 20000,
       "img": "https://www.jakartanotebook.com/images/products/99/63/19075/2/kaos-polos-katun-pria-o-neck-size-m-81402b-or-t-shirt-black-24.jpg",
-      "discount": 15,
+      "discount": "15",
       "productName": "Kaos Polos Hitam",
-      "id": 9
-    },
-    {
-      "productId": 4,
-      "userId": 29,
-      "quantity": 0,
-      "price": 18000,
-      "img": "https://doktersehat.com/wp-content/uploads/2018/11/kopi-doktersehat.jpg",
-      "discount": 0,
-      "productName": "Something In Coffee",
-      "id": 10
-    },
-    {
-      "productId": 3,
-      "userId": 1,
-      "quantity": 6,
-      "price": 30000,
-      "img": "https://ecs7.tokopedia.net/img/product-1/2018/7/27/27345219/27345219_c9909d3f-8e63-4581-a242-63995611577d_1000_1000.jpg",
-      "discount": 20,
-      "productName": "Epic Comeback",
-      "id": 16
-    },
-    {
-      "productId": 4,
-      "userId": 1,
-      "quantity": 1,
-      "price": 18000,
-      "img": "https://doktersehat.com/wp-content/uploads/2018/11/kopi-doktersehat.jpg",
-      "discount": 0,
-      "productName": "Something In Coffee",
-      "id": 17
-    }
-  ],
-  "history": [
-    {
-      "userId": 1,
-      "items": [
-        {
-          "productId": 3,
-          "userId": 1,
-          "quantity": 80,
-          "price": 30000,
-          "img": "https://ecs7.tokopedia.net/img/product-1/2018/7/27/27345219/27345219_c9909d3f-8e63-4581-a242-63995611577d_1000_1000.jpg",
-          "discount": 20,
-          "productName": "Epic Comeback",
-          "id": 5
-        }
-      ],
-      "time": "2019-9 - 3",
-      "TotalPrice": 1920000,
-      "recipient": "andre",
-      "postalCode": "24284",
-      "address": "budima",
       "id": 1
     },
     {
-      "userId": 1,
-      "items": [
-        {
-          "productId": 3,
-          "userId": 1,
-          "quantity": 4,
-          "price": 30000,
-          "img": "https://ecs7.tokopedia.net/img/product-1/2018/7/27/27345219/27345219_c9909d3f-8e63-4581-a242-63995611577d_1000_1000.jpg",
-          "discount": 20,
-          "productName": "Epic Comeback",
-          "id": 5
-        }
-      ],
-      "time": "2019-9 - 3",
-      "TotalPrice": 96000,
-      "recipient": "Eric",
-      "postalCode": "1345",
-      "address": "Palangkaraya",
+      "productId": 2,
+      "userId": 3,
+      "quantity": 3,
+      "price": 40000,
+      "img": "https://ecs7.tokopedia.net/img/cache/700/product-1/2016/12/9/298156/298156_f1170a78-5b7a-4654-9643-2d17059a385b.jpg",
+      "discount": 0,
+      "productName": "The Gelap Kesatria",
       "id": 2
-    },
-    {
-      "userId": 3,
-      "items": [
-        {
-          "productId": 1,
-          "userId": 3,
-          "quantity": 5,
-          "price": "20000",
-          "img": "https://www.jakartanotebook.com/images/products/99/63/19075/2/kaos-polos-katun-pria-o-neck-size-m-81402b-or-t-shirt-black-24.jpg",
-          "discount": "15",
-          "productName": "Kaos Polos Hitam",
-          "id": 5
-        }
-      ],
-      "time": "2019-9 - 3",
-      "TotalPrice": 85000,
-      "recipient": "Ular",
-      "postalCode": "6000",
-      "address": "apapun",
-      "id": 3
-    },
-    {
-      "userId": 1,
-      "items": [
-        {
-          "productId": 3,
-          "userId": 1,
-          "quantity": 7,
-          "price": 30000,
-          "img": "https://ecs7.tokopedia.net/img/product-1/2018/7/27/27345219/27345219_c9909d3f-8e63-4581-a242-63995611577d_1000_1000.jpg",
-          "discount": 20,
-          "productName": "Epic Comeback",
-          "id": 5
-        }
-      ],
-      "time": "2019-9 - 3",
-      "TotalPrice": 168000,
-      "recipient": "Lian",
-      "postalCode": "11546",
-      "address": "Karawaci",
-      "id": 4
-    },
-    {
-      "userId": 1,
-      "items": [
-        {
-          "productId": 1,
-          "userId": 1,
-          "quantity": 2,
-          "price": 20000,
-          "img": "https://www.jakartanotebook.com/images/products/99/63/19075/2/kaos-polos-katun-pria-o-neck-size-m-81402b-or-t-shirt-black-24.jpg",
-          "discount": 15,
-          "productName": "Kaos Polos Hitam",
-          "id": 5
-        },
-        {
-          "productId": 3,
-          "userId": 1,
-          "quantity": 4,
-          "price": 30000,
-          "img": "https://ecs7.tokopedia.net/img/product-1/2018/7/27/27345219/27345219_c9909d3f-8e63-4581-a242-63995611577d_1000_1000.jpg",
-          "discount": 20,
-          "productName": "Epic Comeback",
-          "id": 6
-        }
-      ],
-      "time": "2019-9 - 4",
-      "TotalPrice": 130000,
-      "recipient": "Andre",
-      "postalCode": "5000",
-      "address": "Kemanapun",
-      "id": 5
-    },
-    {
-      "userId": 1,
-      "items": [
-        {
-          "productId": 3,
-          "userId": 1,
-          "quantity": 1,
-          "price": 30000,
-          "img": "https://ecs7.tokopedia.net/img/product-1/2018/7/27/27345219/27345219_c9909d3f-8e63-4581-a242-63995611577d_1000_1000.jpg",
-          "discount": 20,
-          "productName": "Epic Comeback",
-          "id": 5
-        }
-      ],
-      "time": "2019-9 - 4",
-      "TotalPrice": 24000,
-      "recipient": "Adria",
-      "postalCode": "1341414",
-      "address": "fwisbfwswf",
-      "id": 6
-    },
-    {
-      "userId": 1,
-      "items": [
-        {
-          "productId": 3,
-          "userId": 1,
-          "quantity": 9,
-          "price": 30000,
-          "img": "https://ecs7.tokopedia.net/img/product-1/2018/7/27/27345219/27345219_c9909d3f-8e63-4581-a242-63995611577d_1000_1000.jpg",
-          "discount": 20,
-          "productName": "Epic Comeback",
-          "id": 5
-        }
-      ],
-      "time": "2019-9 - 4",
-      "TotalPrice": 216000,
-      "recipient": "Lian",
-      "postalCode": "12345",
-      "address": "UPH",
-      "id": 7
-    },
-    {
-      "userId": 1,
-      "items": [
-        {
-          "productId": 3,
-          "userId": 1,
-          "quantity": 5,
-          "price": 30000,
-          "img": "https://ecs7.tokopedia.net/img/product-1/2018/7/27/27345219/27345219_c9909d3f-8e63-4581-a242-63995611577d_1000_1000.jpg",
-          "discount": 20,
-          "productName": "Epic Comeback",
-          "id": 5
-        }
-      ],
-      "time": "2019-9 - 5",
-      "TotalPrice": 120000,
-      "recipient": "Bernad",
-      "postalCode": "134",
-      "address": "kemanasaja",
-      "id": 8
-    },
-    {
-      "userId": 2,
-      "items": [
-        {
-          "productId": 2,
-          "userId": 2,
-          "quantity": 5,
-          "price": 40000,
-          "img": "https://store.primagraphia.co.id/wp-content/uploads/2014/08/konsep-kaos.jpg",
-          "discount": 0,
-          "productName": "The Dark Knight",
-          "id": 2
-        },
-        {
-          "productId": 3,
-          "userId": 2,
-          "quantity": 1,
-          "price": 30000,
-          "img": "https://ecs7.tokopedia.net/img/product-1/2018/7/27/27345219/27345219_c9909d3f-8e63-4581-a242-63995611577d_1000_1000.jpg",
-          "discount": 20,
-          "productName": "Epic Comeback",
-          "id": 3
-        },
-        {
-          "productId": 1,
-          "userId": 2,
-          "quantity": 14,
-          "price": 20000,
-          "img": "https://www.jakartanotebook.com/images/products/99/63/19075/2/kaos-polos-katun-pria-o-neck-size-m-81402b-or-t-shirt-black-24.jpg",
-          "discount": 10,
-          "productName": "Kaos Polos Hitam",
-          "id": 4
-        }
-      ],
-      "time": "2019-9 - 5",
-      "TotalPrice": 476000,
-      "recipient": "kemanapun",
-      "postalCode": "1234",
-      "address": "anda pergi",
-      "id": 9
-    },
-    {
-      "userId": 3,
-      "items": [
-        {
-          "productId": 3,
-          "userId": 3,
-          "quantity": 1,
-          "price": 30000,
-          "img": "https://ecs7.tokopedia.net/img/product-1/2018/7/27/27345219/27345219_c9909d3f-8e63-4581-a242-63995611577d_1000_1000.jpg",
-          "discount": 20,
-          "productName": "Epic Comeback",
-          "id": 19
-        },
-        {
-          "productId": 1,
-          "userId": 3,
-          "quantity": 1,
-          "price": 20000,
-          "img": "https://www.jakartanotebook.com/images/products/99/63/19075/2/kaos-polos-katun-pria-o-neck-size-m-81402b-or-t-shirt-black-24.jpg",
-          "discount": 15,
-          "productName": "Kaos Polos Hitam",
-          "id": 20
-        },
-        {
-          "productId": 4,
-          "userId": 3,
-          "quantity": 4,
-          "price": 18000,
-          "img": "https://doktersehat.com/wp-content/uploads/2018/11/kopi-doktersehat.jpg",
-          "discount": 0,
-          "productName": "Something In Coffee",
-          "id": 21
-        }
-      ],
-      "time": "2019-9 - 5",
-      "TotalPrice": 113000,
-      "recipient": "Apapun",
-      "postalCode": "fweqfwf",
-      "address": "dssfs",
-      "id": 10
     }
-  ]
+  ],
+  "history": []
 }

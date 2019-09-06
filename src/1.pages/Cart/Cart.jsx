@@ -165,7 +165,7 @@ class Cart extends Component {
         }else if (this.props.id !==0){
         return (
             <div className="container">
-                <table className="table mt-3 text-center">
+                <table className="table table-striped mt-5 text-center ">
                     <thead>
                         <tr>
                             <th>Name</th>
@@ -179,27 +179,28 @@ class Cart extends Component {
                     <tbody>
                         {this.renderCart()}
                     </tbody>
+                <table/>
                    
-                    <div className="row">
-                        <div className="col-8">
-                        <input type="button" className="btn btn-success" value="CHECKOUT" onClick={()=> this.setState({isCheckout:!this.state.isCheckout})}/>
-                        </div>
-                        {/* {this.TotalPrice()} */}
                         { 
                          this.state.cartData.length > 0
                          ?
-                         <div className="col-4">
-                            <h3>Total Harga = {this.TotalPrice()}</h3>
+                         <div className="row">
+                              <div className="col-8">
+                                 <input type="button" onClick={() => this.setState({isCheckout : !this.state.isCheckout})} className="btn btn-success btn-block" value="CHECKOUT"/>
+                             </div>
+                    
+                            <div className="col-4">
+                                <h3>Total Harga = {this.TotalPrice()}</h3>
+                            </div>
                         </div>
                          :
-                         <div className="col-4">
-                            <h1>Cart Anda Kosong</h1>
-                            <Link to="/"> <input type="button" value="back to menu"/></Link>
-                        </div>
+                         <>
+                            <center>
+                                <div className="alert alert-danger">Your Cart is empty,Let's <Link to ='/'>Go Shopping </Link>  </div>
+                            </center>
+                         </>
                         }
                         
-                        
-                    </div>
                     {this.state.isCheckout
                     ?
                     <div className="row mt-4">

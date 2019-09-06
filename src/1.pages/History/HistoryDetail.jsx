@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Axios from 'axios';
 import { urlApi } from '../../3.helpers/database';
 import {connect} from 'react-redux'
+import {Link} from 'react-router-dom'
 
 class HistoryDetail extends Component {
     state = {
@@ -20,28 +21,17 @@ class HistoryDetail extends Component {
     }
     renderDetail=()=>{ // ini buat render jumlah
         var jsx = this.state.data.map((val) => {
-            var porno = val.items.map((value) => {
+            var detailsHis = val.items.map((value) => {
                 return(
-                    <div>
-                        <table>
-                            <tr>
-                                <th>Kuantitas</th>
-                                <th>Individual Price</th>
-                                <th>Nama Produk</th>
-                                <th>Diskon</th>
-                            </tr>
                             <tr>
                                 <td>{value.quantity}</td>
                                 <td>{value.price}</td>
                                 <td>{value.productName}</td>
-                                <td>{value.discount}</td>
+                                <td>{value.discount+"%"}</td>
                             </tr>
-                        </table>
-                        
-                    </div>
                 )
             })
-            return porno
+            return detailsHis
         })
         return jsx
     }
@@ -58,9 +48,33 @@ class HistoryDetail extends Component {
             )
         }
         return (
-            <div>
-                {this.renderDetail()}
-            </div>
+            <div className="container">
+            <center><h3>Details History Product</h3></center>
+            <table className="table table-striped mt-5 text-center">
+                <thead>
+                        <tr>
+                            <th>Items</th>
+                            <th>HArga</th>
+                            <th>Nama Produk</th>
+                            <th>Diskon</th>
+
+                        </tr>
+                </thead>
+                <tbody>
+                         {this.renderDetail()}
+                </tbody>
+                <tfoot>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <Link to = {{pathname: '/history'}}>
+                            <th><button className="btn btn-warning">Back</button></th>
+                            </Link>
+                        </tr>
+                </tfoot>
+            </table>           
+        </div>
         );
     }
 }

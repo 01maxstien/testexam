@@ -25,30 +25,18 @@ class History extends Component {
     renderHistory = () => {
         var jsx = this.state.data.map((val)=>{
             return(
-                <div>
-                <table>
-                <tr>
-                    <th>id</th>
-                    <th>waktu</th>
-                    <th>totalPrice</th>
-                    <th>Penerima</th>
-                    <th>Alamat</th>
-                    <Link to = {{pathname: '/history-detail/' + val.id ,state: {
-                        transactionId: val.id
-                    }}}>
-                        <th>click untuk detail</th>
-                    </Link>
-                </tr>
                 <tr>
                     <td>{val.id}</td>
                     <td>{val.time}</td>
-                    <td>{val.TotalPrice}</td>
+                    <td>{val.totalPrice}</td>
                     <td>{val.recipient}</td>
-                    <td>{val.address}</td>
-                    <td></td>
+                    <td>{val.alamat}</td>
+                    <Link to = {{pathname: '/history-detail/' + val.id ,state: {
+                        transactionId: val.id
+                    }}}>
+                        <td><button className="btn btn-warning">Details</button></td>
+                    </Link>
                 </tr>
-                </table>
-                </div>
             )
         })
         return jsx
@@ -56,20 +44,39 @@ class History extends Component {
     render() {
         console.log(this.props.id)
         if(this.state.data === null){
-            return('apapun')
+            return('Loading...')
         }else if (this.props.id == 0){
            return( <Redirect to="/" exact /> )
         }
         
         return (
-            <div>
-                
-                <table>
-                
-                 
-                {this.renderHistory()}
-                
-                </table>
+            <div className="container">
+                {
+                     this.state.data.length>0
+                     ?
+                     <table className="table table-striped mt-5 text-center">
+                         <thead>
+                         <tr>
+                             <th scope="col">no</th>
+                             <th scope="col">Tangal</th>
+                             <th scope="col">Total Harga</th>
+                             <th scope="col">Penerima</th>
+                             <th scope="col">Alamat</th>
+                             <th scope="col">Option</th>
+                         </tr>
+                         </thead>
+                         <tbody>
+                             {this.renderHistory()}
+                         </tbody>
+                     </table>
+                     :
+                     <>
+                     <center>
+                     <div className="alert alert-danger">Your History is empty,Let's <Link to ='/'>Go Shopping </Link>  </div>
+             
+                     </center>
+                     </>
+                }
             </div>
         );
         
